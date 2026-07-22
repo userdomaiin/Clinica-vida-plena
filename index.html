@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Vida Plena - Cuidando da Sua Saúde com Excelência</title>
+    <meta name="description" content="Clínica Vida Plena - Atendimento médico de excelência. Especialidades, corpo clínico renomado e estrutura moderna. Agende sua consulta.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-heart-pulse"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">Vida Plena</span>
+                    <span class="logo-sub">Clínica Médica</span>
+                </div>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-link active">Início</a>
+                <a href="#especialidades" class="nav-link">Especialidades</a>
+                <a href="#corpo-clinico" class="nav-link">Corpo Clínico</a>
+                <a href="#exames" class="nav-link">Exames</a>
+                <a href="#estrutura" class="nav-link">Estrutura</a>
+                <a href="#horarios" class="nav-link">Horários</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#agendar" class="btn btn-primary btn-header">
+                    <i class="fas fa-calendar-check"></i>
+                    Agendar Consulta
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+        </div>
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <span class="hero-badge animate-fade-up">
+                    <i class="fas fa-shield-halved"></i>
+                    Atendimento de Excelência
+                </span>
+                <h1 class="hero-title animate-fade-up" style="animation-delay: 0.1s">
+                    Cuide da sua saúde com <span class="text-gradient">confiança</span> e <span class="text-gradient">comodidade</span>
+                </h1>
+                <p class="hero-description animate-fade-up" style="animation-delay: 0.2s">
+                    Na Clínica Vida Plena, oferecemos atendimento humanizado com profissionais altamente qualificados e estrutura de ponta para cuidar de você e da sua família.
+                </p>
+                <div class="hero-buttons animate-fade-up" style="animation-delay: 0.3s">
+                    <a href="#agendar" class="btn btn-primary btn-lg">
+                        <i class="fas fa-calendar-check"></i>
+                        Agendar Consulta
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-whatsapp btn-lg">
+                        <i class="fab fa-whatsapp"></i>
+                        Fale Conosco
+                    </a>
+                </div>
+                <div class="hero-stats animate-fade-up" style="animation-delay: 0.4s">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="15">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Anos de Experiência</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="25">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Especialidades</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-suffix">mil+</span>
+                        <span class="stat-label">Pacientes Atendidos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual animate-fade-left">
+                <div class="hero-card hero-card-1">
+                    <div class="hero-card-icon"><i class="fas fa-stethoscope"></i></div>
+                    <div class="hero-card-text">
+                        <strong>Atendimento Humanizado</strong>
+                        <span>Cuidando com empatia</span>
+                    </div>
+                </div>
+                <div class="hero-card hero-card-2">
+                    <div class="hero-card-icon"><i class="fas fa-clock"></i></div>
+                    <div class="hero-card-text">
+                        <strong>Horários Flexíveis</strong>
+                        <span>Manhã e tarde</span>
+                    </div>
+                </div>
+                <div class="hero-card hero-card-3">
+                    <div class="hero-card-icon"><i class="fas fa-award"></i></div>
+                    <div class="hero-card-text">
+                        <strong>Profissionais Renomados</strong>
+                        <span>Equipe especializada</span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=500&h=500&fit=crop&crop=face" alt="Médica sorrindo" class="hero-img">
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,80 1440,60 L1440,120 L0,120 Z" fill="var(--white)"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Especialidades Section -->
+    <section class="section section-specialties" id="especialidades">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-fade-up">Nossas Especialidades</span>
+                <h2 class="section-title animate-fade-up">Cuidamos de você em <span class="text-gradient">todas as áreas</span></h2>
+                <p class="section-description animate-fade-up">Contamos com as melhores especialidades médicas para oferecer um atendimento completo e integrado.</p>
+            </div>
+            <div class="specialties-grid">
+                <div class="specialty-card animate-fade-up" style="animation-delay: 0.05s">
+                    <div class="specialty-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Cardiologia</h3>
+                    <p>Cuidados completos para a saúde do seu coração com exames modernos e tratamentos eficazes.</p>
+                </div>
+                <div class="specialty-card animate-fade-up" style="animation-delay: 0.1s">
+                    <div class="specialty-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Neurologia</h3>
+                    <p>Diagnóstico e tratamento de doenças do sistema nervoso central e periférico.</p>
+                </div>
+                <div class="specialty-card animate-fade-up" style="animation-delay: 0.15s">
+                    <div class="specialty-icon"><i class="fas fa-bone"></i></div>
+                    <h3>Ortopedia</h3>
+                    <p>Tratamento de lesões e doenças do sistema musculoesquelético com técnicas minimamente invasivas.</p>
+                </div>
+                <div class="specialty-card animate-fade-up" style="animation-delay: 0.2s">
+                    <div class="specialty-icon"><i class="fas fa-baby"></i></div>
+                    <h3>Pediatria</h3>
+                    <p>Atendimento especializado para crianças e adolescentes com cuidado e carinho.</p>
+                </div>
+                <div class="specialty-card animate-fade-up" style="animation-delay: 0.25s">
+                    <div class="specialty-icon"><i class="fas fa-lungs"></i></div>
+                    <h3>Pneumologia</h3>
+                    <p>Diagnóstico e tratamento de doenças respiratórias e pulmonares.</p>
+                </div>
+                <div class="specialty-card animate-fade-up" style="animation-delay: 0.3s">
+                    <div class="specialty-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Oftalmologia</h3>
+                    <p>Exames e tratamentos para preservar e recuperar a saúde dos seus olhos.</p>
+                </div>
+                <div class="specialty-card animate-fade-up" style="animation-delay: 0.35s">
+                    <div class="specialty-icon"><i class="fas fa-tooth"></i></div>
+                    <h3>Odontologia</h3>
+                    <p>Saúde bucal completa com profissionais qualificados e equipamentos modernos.</p>
+                </div>
+                <div class="specialty-card animate-fade-up" style="animation-delay: 0.4s">
+                    <div class="specialty-icon"><i class="fas fa-dna"></i></div>
+                    <h3>Ginecologia</h3>
+                    <p>Saúde da mulher em todas as fases da vida com atendimento respeitoso e humanizado.</p>
+                </div>
+                <div class="specialty-card animate-fade-up" style="animation-delay: 0.45s">
+                    <div class="specialty-icon"><i class="fas fa-user-doctor"></i></div>
+                    <h3>Clínico Geral</h3>
+                    <p>Avaliação completa e orientação para manter sua saúde em dia.</p>
+                </div>
+                <div class="specialty-card animate-fade-up" style="animation-delay: 0.5s">
+                    <div class="specialty-icon"><i class="fas fa-apple-whole"></i></div>
+                    <h3>Nutrologia</h3>
+                    <p>Planejamento nutricional personalizado para sua saúde e bem-estar.</p>
+                </div>
+                <div class="specialty-card animate-fade-up" style="animation-delay: 0.55s">
+                    <div class="specialty-icon"><i class="fas fa-ear-listen"></i></div>
+                    <h3>Otorrinolaringologia</h3>
+                    <p>Tratamento de ouvido, nariz e garganta com tecnologia de ponta.</p>
+                </div>
+                <div class="specialty-card animate-fade-up" style="animation-delay: 0.6s">
+                    <div class="specialty-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Dermatologia</h3>
+                    <p>Cuidados com a saúde da sua pele, unhas e cabelos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corpo Clínico Section -->
+    <section class="section section-medical-team" id="corpo-clinico">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-fade-up">Corpo Clínico</span>
+                <h2 class="section-title animate-fade-up">Equipe de <span class="text-gradient">alta qualidade</span></h2>
+                <p class="section-description animate-fade-up">Nossos médicos são referência em suas especialidades, comprometidos com o melhor atendimento.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card animate-fade-up" style="animation-delay: 0.05s">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=300&fit=crop&crop=face" alt="Dr. Ricardo Almeida">
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Ricardo Almeida</h3>
+                        <span class="team-specialty">Cardiologia</span>
+                        <p>CRM 123456 | Especialista em Cardiologia Intervencionista</p>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card animate-fade-up" style="animation-delay: 0.1s">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964ac31?w=400&h=300&fit=crop&crop=face" alt="Dra. Mariana Costa">
+                    </div>
+                    <div class="team-info">
+                        <h3>Dra. Mariana Costa</h3>
+                        <span class="team-specialty">Neurologia</span>
+                        <p>CRM 234567 | Especialista em Neurologia Clínica</p>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card animate-fade-up" style="animation-delay: 0.15s">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=300&fit=crop&crop=face" alt="Dr. Fernando Santos">
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Fernando Santos</h3>
+                        <span class="team-specialty">Ortopedia</span>
+                        <p>CRM 345678 | Especialista em Ortopedia e Traumatologia</p>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card animate-fade-up" style="animation-delay: 0.2s">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=300&fit=crop&crop=face" alt="Dra. Ana Paula Lima">
+                    </div>
+                    <div class="team-info">
+                        <h3>Dra. Ana Paula Lima</h3>
+                        <span class="team-specialty">Pediatria</span>
+                        <p>CRM 456789 | Especialista em Pediatria e Neonatologia</p>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card animate-fade-up" style="animation-delay: 0.25s">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&h=300&fit=crop&crop=face" alt="Dr. Carlos Mendes">
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Carlos Mendes</h3>
+                        <span class="team-specialty">Pneumologia</span>
+                        <p>CRM 567890 | Especialista em Pneumologia e Tisiologia</p>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card animate-fade-up" style="animation-delay: 0.3s">
+                    <div class="team-photo">
+                        <img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&h=300&fit=crop&crop=face" alt="Dra. Juliana Ferreira">
+                    </div>
+                    <div class="team-info">
+                        <h3>Dra. Juliana Ferreira</h3>
+                        <span class="team-specialty">Ginecologia</span>
+                        <p>CRM 678901 | Especialista em Ginecologia e Obstetrícia</p>
+                        <div class="team-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-cta animate-fade-up">
+                <a href="#contato" class="btn btn-outline">Conheça toda nossa equipe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Convênios Section -->
+    <section class="section section-insurance" id="convenios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-fade-up">Convênios</span>
+                <h2 class="section-title animate-fade-up">Aceitamos os principais <span class="text-gradient">convênios médicos</span></h2>
+                <p class="section-description animate-fade-up">Trabalhamos com as maiores operadoras para facilitar o seu atendimento.</p>
+            </div>
+            <div class="insurance-grid">
+                <div class="insurance-card animate-fade-up" style="animation-delay: 0.05s">
+                    <div class="insurance-logo"><i class="fas fa-hospital"></i></div>
+                    <span>Amil</span>
+                </div>
+                <div class="insurance-card animate-fade-up" style="animation-delay: 0.1s">
+                    <div class="insurance-logo"><i class="fas fa-hospital"></i></div>
+                    <span>Unimed</span>
+                </div>
+                <div class="insurance-card animate-fade-up" style="animation-delay: 0.15s">
+                    <div class="insurance-logo"><i class="fas fa-hospital"></i></div>
+                    <span>SulAmérica</span>
+                </div>
+                <div class="insurance-card animate-fade-up" style="animation-delay: 0.2s">
+                    <div class="insurance-logo"><i class="fas fa-hospital"></i></div>
+                    <span>Bradesco Saúde</span>
+                </div>
+                <div class="insurance-card animate-fade-up" style="animation-delay: 0.25s">
+                    <div class="insurance-logo"><i class="fas fa-hospital"></i></div>
+                    <span>Omint</span>
+                </div>
+                <div class="insurance-card animate-fade-up" style="animation-delay: 0.3s">
+                    <div class="insurance-logo"><i class="fas fa-hospital"></i></div>
+                    <span>Porto Seguro</span>
+                </div>
+                <div class="insurance-card animate-fade-up" style="animation-delay: 0.35s">
+                    <div class="insurance-logo"><i class="fas fa-hospital"></i></div>
+                    <span>Notre Dame</span>
+                </div>
+                <div class="insurance-card animate-fade-up" style="animation-delay: 0.4s">
+                    <div class="insurance-logo"><i class="fas fa-hospital"></i></div>
+                    <span>Cross/Intermedica</span>
+                </div>
+                <div class="insurance-card animate-fade-up" style="animation-delay: 0.45s">
+                    <div class="insurance-logo"><i class="fas fa-hospital"></i></div>
+                    <span>Saúde Caixa</span>
+                </div>
+                <div class="insurance-card animate-fade-up" style="animation-delay: 0.5s">
+                    <div class="insurance-logo"><i class="fas fa-hospital"></i></div>
+                    <span>Particular</span>
+                </div>
+            </div>
+            <div class="insurance-note animate-fade-up">
+                <i class="fas fa-info-circle"></i>
+                <span>Entre em contato para confirmar a cobertura do seu convênio.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exames Section -->
+    <section class="section section-exams" id="exames">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-fade-up">Exames</span>
+                <h2 class="section-title animate-fade-up">Exames com <span class="text-gradient">agilidade e precisão</span></h2>
+                <p class="section-description animate-fade-up">Laboratório equipado com tecnologia de última geração para diagnósticos rápidos e confiáveis.</p>
+            </div>
+            <div class="exams-categories">
+                <div class="exam-category animate-fade-up" style="animation-delay: 0.05s">
+                    <div class="exam-category-icon"><i class="fas fa-vials"></i></div>
+                    <h3>Análises Clínicas</h3>
+                    <ul class="exam-list">
+                        <li>Hemograma Completo</li>
+                        <li>Colesterol e Triglicérides</li>
+                        <li>Glicemia</li>
+                        <li>Exame de Urina</li>
+                        <li>Função Hepática</li>
+                        <li>Função Renal</li>
+                        <li>Tireoide</li>
+                        <li>Vitaminas e Minerais</li>
+                    </ul>
+                </div>
+                <div class="exam-category animate-fade-up" style="animation-delay: 0.15s">
+                    <div class="exam-category-icon"><i class="fas fa-x-ray"></i></div>
+                    <h3>Imagem</h3>
+                    <ul class="exam-list">
+                        <li>Raio-X Convencional</li>
+                        <li>Ultrassonografia</li>
+                        <li>Mamografia</li>
+                        <li>Densitometria Óssea</li>
+                        <li>Eletrocardiograma</li>
+                        <li>Eletroencefalograma</li>
+                        <li>Tomografia</li>
+                        <li>Ressonância Magnética</li>
+                    </ul>
+                </div>
+                <div class="exam-category animate-fade-up" style="animation-delay: 0.25s">
+                    <div class="exam-category-icon"><i class="fas fa-heart-pulse"></i></div>
+                    <h3>Exames Especiais</h3>
+                    <ul class="exam-list">
+                        <li>Teste Ergométrico</li>
+                        <li>Mapa de Pressão</li>
+                        <li>Holter 24h</li>
+                        <li>Endoscopia</li>
+                        <li>Colonoscopia</li>
+                       Audiometria</li>
+                        <li>Espirometria</li>
+                        <li>Exames Genéticos</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="exams-cta animate-fade-up">
+                <p>Não encontrou o exame que precisa? <a href="#contato">Entre em contato</a> conosco.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estrutura Section -->
+    <section class="section section-structure" id="estrutura">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-fade-up">Nossa Estrutura</span>
+                <h2 class="section-title animate-fade-up">Ambiente <span class="text-gradient">moderno e acolhedor</span></h2>
+                <p class="section-description animate-fade-up">Infraestrutura planejada para oferecer conforto e segurança aos nossos pacientes.</p>
+            </div>
+            <div class="structure-features">
+                <div class="structure-card animate-fade-up" style="animation-delay: 0.05s">
+                    <div class="structure-icon"><i class="fas fa-square-parking"></i></div>
+                    <h3>Estacionamento</h3>
+                    <p>Vagas cobertas e descobertas com segurança 24 horas para sua comodidade.</p>
+                </div>
+                <div class="structure-card animate-fade-up" style="animation-delay: 0.1s">
+                    <div class="structure-icon"><i class="fas fa-elevator"></i></div>
+                    <h3>Acessibilidade</h3>
+                    <p>Completa acessibilidade para pessoas com mobilidade reduzida.</p>
+                </div>
+                <div class="structure-card animate-fade-up" style="animation-delay: 0.15s">
+                    <div class="structure-icon"><i class="fas fa-wifi"></i></div>
+                    <h3>Wi-Fi Gratuito</h3>
+                    <p>Internet de alta velocidade disponível em toda a clínica.</p>
+                </div>
+                <div class="structure-card animate-fade-up" style="animation-delay: 0.2s">
+                    <div class="structure-icon"><i class="fas fa-couch"></i></div>
+                    <h3>Sala de Espera</h3>
+                    <p>Ambiente climatizado e confortável com TV e revistas.</p>
+                </div>
+                <div class="structure-card animate-fade-up" style="animation-delay: 0.25s">
+                    <div class="structure-icon"><i class="fas fa-mug-hot"></i></div>
+                    <h3>Copa</h3>
+                    <p>Área de apoio com café, água e lanches para os pacientes.</p>
+                </div>
+                <div class="structure-card animate-fade-up" style="animation-delay: 0.3s">
+                    <div class="structure-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Segurança</h3>
+                    <p>Monitoramento por câmeras e controle de acesso em todas as áreas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Section -->
+    <section class="section section-gallery" id="galeria">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-fade-up">Galeria</span>
+                <h2 class="section-title animate-fade-up">Conheça nossa <span class="text-gradient">estrutura</span></h2>
+                <p class="section-description animate-fade-up">Um passeio visual pela nossa clínica.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-large animate-fade-up" style="animation-delay: 0.05s">
+                    <div class="gallery-placeholder">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop" alt="Recepção da clínica">
+                        <span>Recepção</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-fade-up" style="animation-delay: 0.1s">
+                    <div class="gallery-placeholder">
+                        <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=400&h=300&fit=crop" alt="Consultório moderno">
+                        <span>Consultório</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-fade-up" style="animation-delay: 0.15s">
+                    <div class="gallery-placeholder">
+                        <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&h=300&fit=crop" alt="Laboratório">
+                        <span>Laboratório</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-fade-up" style="animation-delay: 0.2s">
+                    <div class="gallery-placeholder">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=400&h=300&fit=crop" alt="Exame de imagem">
+                        <span>Imagem</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-wide animate-fade-up" style="animation-delay: 0.25s">
+                    <div class="gallery-placeholder">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=400&fit=crop" alt="Sala de espera">
+                        <span>Sala de Espera</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-fade-up" style="animation-delay: 0.3s">
+                    <div class="gallery-placeholder">
+                        <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=400&h=300&fit=crop" alt="Enfermaria">
+                        <span>Enfermaria</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-fade-up" style="animation-delay: 0.35s">
+                    <div class="gallery-placeholder">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop" alt="Fisioterapia">
+                        <span>Fisioterapia</span>
+                    </div>
+                </div>
+                <div class="gallery-item animate-fade-up" style="animation-delay: 0.4s">
+                    <div class="gallery-placeholder">
+                        <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?w=400&h=300&fit=crop" alt="Espaço verde">
+                        <span>Jardim</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section class="section section-testimonials" id="depoimentos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-fade-up">Depoimentos</span>
+                <h2 class="section-title animate-fade-up">O que nossos pacientes <span class="text-gradient">dizem</span></h2>
+                <p class="section-description animate-fade-up">A satisfação dos nossos pacientes é a nossa maior motivação.</p>
+            </div>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonials-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Atendimento excepcional! Os médicos são muito atenciosos e a estrutura da clínica é impecável. Recomendo de olhos fechados."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <strong>Maria Clara S.</strong>
+                                <span>Paciente há 3 anos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"A melhor clínica que já fui. Equipe médica nota 10, sempre dispostos a ajudar. O agendamento online facilita muito!"</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <strong>Roberto A.</strong>
+                                <span>Paciente há 5 anos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Minha família inteira é atendida aqui. Profissionais competentes e ambiente muito acolhedor. Super satisfeita!"</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <strong>Ana Beatriz M.</strong>
+                                <span>Paciente há 2 anos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Fiz todos os exames na mesma clínica e recebi os resultados rapidamente. A comodidade e a qualidade do atendimento são incomparáveis."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <strong>Carlos Eduardo P.</strong>
+                                <span>Paciente há 1 ano</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-nav">
+                    <button class="testimonial-btn" id="prevBtn" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonials-dots" id="testimonialsDots"></div>
+                    <button class="testimonial-btn" id="nextBtn" aria-label="Próximo"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-fade-up">Perguntas Frequentes</span>
+                <h2 class="section-title animate-fade-up">Tire suas <span class="text-gradient">dúvidas</span></h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item animate-fade-up" style="animation-delay: 0.05s">
+                    <button class="faq-question">
+                        <span>Como agendar uma consulta?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Você pode agendar pelo telefone (11) 3456-7890, pelo WhatsApp ou pelo formulário em nosso site. Nosso horário de atendimento para agendamentos é de segunda a sexta, das 7h às 19h, e sábado das 7h às 12h.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-fade-up" style="animation-delay: 0.1s">
+                    <button class="faq-question">
+                        <span>Quais convênios vocês aceitam?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Trabalhamos com os principais convênios médicos do mercado, incluindo Amil, Unimed, SulAmérica, Bradesco Saúde, Omint, Porto Seguro e outros. Entre em contato para confirmar a cobertura do seu plano específico.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-fade-up" style="animation-delay: 0.15s">
+                    <button class="faq-question">
+                        <span>É necessário encaminhamento médico?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Para a maioria das consultas não é necessário encaminhamento. Porém, para alguns exames e procedimentos, o convênio pode exigir. Consulte nossa recepção para mais informações.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-fade-up" style="animation-delay: 0.2s">
+                    <button class="faq-question">
+                        <span>Vocês atendem por particular?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Aceitamos pagamento particular com valores acessíveis. Também oferecemos opções de parcelamento para consultas e exames. Consulte valores na recepção.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-fade-up" style="animation-delay: 0.25s">
+                    <button class="faq-question">
+                        <span>Qual o prazo para resultado de exames?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Análises clínicas: 1 a 3 dias úteis. Exames de imagem: na hora ou até 5 dias úteis, dependendo do exame. Resultados são disponibilizados online pelo nosso portal do paciente.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-fade-up" style="animation-delay: 0.3s">
+                    <button class="faq-question">
+                        <span>Há estacionamento no local?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim, dispomos de estacionamento com vagas cobertas e descobertas, com segurança 24 horas. O acesso é gratuito para pacientes durante o horário de consulta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Horários Section -->
+    <section class="section section-schedule" id="horarios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-fade-up">Horários de Funcionamento</span>
+                <h2 class="section-title animate-fade-up">Conheça nossos <span class="text-gradient">horários</span></h2>
+            </div>
+            <div class="schedule-content">
+                <div class="schedule-main animate-fade-up">
+                    <div class="schedule-card">
+                        <div class="schedule-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Horário Geral</h3>
+                        <div class="schedule-table">
+                            <div class="schedule-row">
+                                <span class="schedule-day">Segunda a Sexta</span>
+                                <span class="schedule-time">07:00 - 19:00</span>
+                            </div>
+                            <div class="schedule-row">
+                                <span class="schedule-day">Sábado</span>
+                                <span class="schedule-time">07:00 - 12:00</span>
+                            </div>
+                            <div class="schedule-row">
+                                <span class="schedule-day">Domingo e Feriados</span>
+                                <span class="schedule-time">Fechado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-details animate-fade-up" style="animation-delay: 0.1s">
+                    <div class="schedule-detail-card">
+                        <div class="schedule-detail-icon"><i class="fas fa-stethoscope"></i></div>
+                        <h4>Consultas</h4>
+                        <p>Seg a Sex: 07:00 às 18:30<br>Sáb: 07:00 às 11:30</p>
+                    </div>
+                    <div class="schedule-detail-card">
+                        <div class="schedule-detail-icon"><i class="fas fa-vials"></i></div>
+                        <h4>Laboratório</h4>
+                        <p>Seg a Sex: 06:30 às 17:00<br>Sáb: 06:30 às 11:00</p>
+                    </div>
+                    <div class="schedule-detail-card">
+                        <div class="schedule-detail-icon"><i class="fas fa-x-ray"></i></div>
+                        <h4>Imagem</h4>
+                        <p>Seg a Sex: 07:00 às 18:00<br>Sáb: 07:00 às 12:00</p>
+                    </div>
+                    <div class="schedule-detail-card">
+                        <div class="schedule-detail-icon"><i class="fas fa-phone"></i></div>
+                        <h4>Recepção / Agendamento</h4>
+                        <p>Seg a Sex: 06:30 às 19:00<br>Sáb: 06:30 às 12:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section class="section section-contact" id="contato">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-fade-up">Contato</span>
+                <h2 class="section-title animate-fade-up">Entre em <span class="text-gradient">contato</span></h2>
+                <p class="section-description animate-fade-up">Estamos prontos para atender você.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-fade-up">
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 3456-7890</p>
+                            <p>(11) 99876-5432</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@vidaplena.com.br</p>
+                            <p>agendamento@vidaplena.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-card">
+                        <div class="contact-info-icon"><i class="fas fa-location-dot"></i></div>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Av. Paulista, 1578 - Sala 201</p>
+                            <p>Bela Vista, São Paulo - SP</p>
+                            <p>CEP: 01310-200</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-fade-up" style="animation-delay: 0.1s">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="specialty">Especialidade</label>
+                            <select id="specialty" name="specialty">
+                                <option value="">Selecione uma especialidade</option>
+                                <option value="cardiologia">Cardiologia</option>
+                                <option value="neurologia">Neurologia</option>
+                                <option value="ortopedia">Ortopedia</option>
+                                <option value="pediatria">Pediatria</option>
+                                <option value="pneumologia">Pneumologia</option>
+                                <option value="oftalmologia">Oftalmologia</option>
+                                <option value="odontologia">Odontologia</option>
+                                <option value="ginecologia">Ginecologia</option>
+                                <option value="clinico-geral">Clínico Geral</option>
+                                <option value="nutrologia">Nutrologia</option>
+                                <option value="otorrino">Otorrinolaringologia</option>
+                                <option value="dermatologia">Dermatologia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização Section -->
+    <section class="section section-location" id="localizacao">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag animate-fade-up">Localização</span>
+                <h2 class="section-title animate-fade-up">Como <span class="text-gradient">chegar</span></h2>
+            </div>
+            <div class="location-content">
+                <div class="location-map animate-fade-up">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-location-dot"></i>
+                        <span>Av. Paulista, 1578 - Bela Vista, São Paulo - SP</span>
+                        <a href="https://maps.google.com/?q=Av.+Paulista+1578+São+Paulo" target="_blank" class="btn btn-primary btn-sm">
+                            <i class="fas fa-directions"></i>
+                            Abrir no Google Maps
+                        </a>
+                    </div>
+                </div>
+                <div class="location-info animate-fade-up" style="animation-delay: 0.1s">
+                    <h3>Informações de Acesso</h3>
+                    <div class="location-info-list">
+                        <div class="location-info-item">
+                            <i class="fas fa-train-subway"></i>
+                            <div>
+                                <strong>Metrô</strong>
+                                <p>Estação Consolação (Linha 2-Verde) - 5 min a pé</p>
+                            </div>
+                        </div>
+                        <div class="location-info-item">
+                            <i class="fas fa-bus"></i>
+                            <div>
+                                <strong>Ônibus</strong>
+                                <p>Linhas 109, 114, 174 - Ponto na frente da clínica</p>
+                            </div>
+                        </div>
+                        <div class="location-info-item">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <strong>Estacionamento</strong>
+                                <p>Vagas cobertas e descobertas para pacientes</p>
+                            </div>
+                        </div>
+                        <div class="location-info-item">
+                            <i class="fas fa-wheelchair"></i>
+                            <div>
+                                <strong>Acessibilidade</strong>
+                                <p>Rampas, elevador e banheiros adaptados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendar Section -->
+    <section class="section section-schedule-cta" id="agendar">
+        <div class="container">
+            <div class="schedule-cta-content animate-fade-up">
+                <div class="schedule-cta-icon"><i class="fas fa-calendar-check"></i></div>
+                <h2>Agende sua Consulta Agora</h2>
+                <p>Nosso time está pronto para cuidar de você. Escolha a melhor forma de entrar em contato.</p>
+                <div class="schedule-cta-buttons">
+                    <a href="tel:+551134567890" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone"></i>
+                        (11) 3456-7890
+                    </a>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="btn btn-whatsapp btn-lg">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                    <a href="#contato" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-envelope"></i>
+                        Formulário
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo footer-logo">
+                        <div class="logo-icon"><i class="fas fa-heart-pulse"></i></div>
+                        <div class="logo-text">
+                            <span class="logo-name">Vida Plena</span>
+                            <span class="logo-sub">Clínica Médica</span>
+                        </div>
+                    </a>
+                    <p>Cuidando da sua saúde com excelência, humanidade e tecnologia desde 2010.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Especialidades</h4>
+                    <ul>
+                        <li><a href="#especialidades">Cardiologia</a></li>
+                        <li><a href="#especialidades">Neurologia</a></li>
+                        <li><a href="#especialidades">Ortopedia</a></li>
+                        <li><a href="#especialidades">Pediatria</a></li>
+                        <li><a href="#especialidades">Ginecologia</a></li>
+                        <li><a href="#especialidades">Dermatologia</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#horarios">Horários</a></li>
+                        <li><a href="#convenios">Convênios</a></li>
+                        <li><a href="#exames">Exames</a></li>
+                        <li><a href="#faq">Perguntas Frequentes</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#localizacao">Localização</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (11) 3456-7890</li>
+                        <li><i class="fas fa-whatsapp"></i> (11) 99876-5432</li>
+                        <li><i class="fas fa-envelope"></i> contato@vidaplena.com.br</li>
+                        <li><i class="fas fa-location-dot"></i> Av. Paulista, 1578 - Sala 201</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Clínica Vida Plena. Todos os direitos reservados.</p>
+                <p>CRM-SP 12345 | CNPJ: 12.345.678/0001-90</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta." target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Fale conosco</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
