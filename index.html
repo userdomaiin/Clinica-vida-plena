@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oficina Auto Prime - Excelência em serviços automotivos. Revisão, freios, suspensão, motor e muito mais. Solicite seu orçamento hoje!">
+    <title>Auto Prime - Oficina Mecânica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">
+                <i class="fas fa-car"></i>
+                <span>Auto <strong>Prime</strong></span>
+            </a>
+            <nav class="header__nav" id="nav">
+                <ul class="header__menu">
+                    <li><a href="#servicos" class="header__link">Serviços</a></li>
+                    <li><a href="#marcas" class="header__link">Marcas</a></li>
+                    <li><a href="#galeria" class="header__link">Galeria</a></li>
+                    <li><a href="#diferenciais" class="header__link">Diferenciais</a></li>
+                    <li><a href="#avaliacoes" class="header__link">Avaliações</a></li>
+                    <li><a href="#faq" class="header__link">FAQ</a></li>
+                    <li><a href="#contato" class="header__link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="https://wa.me/5511999999999" target="_blank" class="btn btn--whatsapp-header">
+                    <i class="fab fa-whatsapp"></i> Fale Conosco
+                </a>
+                <button class="header__toggle" id="menuToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero__bg" style="background-image: url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1920&h=1080&fit=crop');"></div>
+        <div class="hero__overlay"></div>
+        <div class="container hero__container">
+            <div class="hero__content">
+                <span class="hero__tag">Excelência em Serviços Automotivos</span>
+                <h1 class="hero__title">Seu carro merece o<br>melhor cuidado</h1>
+                <p class="hero__subtitle">
+                    Há mais de 15 anos cuidando do seu veículo com profissionais especializados, peças originais e garantia em todos os serviços.
+                </p>
+                <div class="hero__cta">
+                    <a href="#contato" class="btn btn--primary btn--large">
+                        Solicitar Orçamento <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#servicos" class="btn btn--outline btn--large">
+                        Nossos Serviços
+                    </a>
+                </div>
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-num" data-count="15">0</span>
+                        <span class="hero__stat-label">Anos de experiência</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-num" data-count="8500">0</span>
+                        <span class="hero__stat-label">Carros atendidos</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-num" data-count="98">0</span>
+                        <span class="hero__stat-label">% Satisfação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__shape">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" fill="#f8f9fa"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section sobre" id="sobre">
+        <div class="container">
+            <div class="sobre__wrapper">
+                <div class="sobre__image" style="background-image: url('https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=600&h=600&fit=crop');">
+                    <div class="sobre__experience">
+                        <span class="sobre__exp-num">15+</span>
+                        <span>Anos de experiência</span>
+                    </div>
+                </div>
+                <div class="sobre__content">
+                    <span class="section__tag">Quem Somos</span>
+                    <h2 class="section__title">Paixão por carros e compromisso com você</h2>
+                    <p>A Auto Prime nasceu da paixão por automóveis e do desejo de oferecer um serviço automotivo diferente de tudo que existia. Desde 2009, construímos nossa reputação com base em confiança, transparência e qualidade.</p>
+                    <p>Nossa equipe é formada por profissionais certificados e treinados continuamente. Investimos em equipamentos modernos de diagnóstico e ferramentas especializadas para atender desde veículos populares até importados de luxo.</p>
+                    <div class="sobre__features">
+                        <div><i class="fas fa-check-circle"></i> Mais de 8.500 carros atendidos</div>
+                        <div><i class="fas fa-check-circle"></i> Garantia em todos os serviços</div>
+                        <div><i class="fas fa-check-circle"></i> Peças originais certificadas</div>
+                        <div><i class="fas fa-check-circle"></i> Orçamento sem compromisso</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section servicos" id="servicos">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Nossos Serviços</span>
+                <h2 class="section__title">Soluções completas para seu veículo</h2>
+                <p class="section__desc">
+                    Da revisão básica à reparação especializada, oferecemos tudo que seu carro precisa em um só lugar.
+                </p>
+            </div>
+            <div class="servicos__grid">
+                <div class="servico-card" style="background-image: url('https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=600&h=400&fit=crop');">
+                    <div class="servico-card__banner"></div>
+                    <div class="servico-card__body">
+                        <div class="servico-card__icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3 class="servico-card__title">Revisão</h3>
+                        <p class="servico-card__desc">Revisão completa seguindo o plano do fabricante. Diagnosticamos cada item com equipamentos de última geração para garantir seu bem-estar.</p>
+                        <a href="#contato" class="servico-card__link">Solicitar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="servico-card" style="background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&h=400&fit=crop');">
+                    <div class="servico-card__banner"></div>
+                    <div class="servico-card__body">
+                        <div class="servico-card__icon">
+                            <i class="fas fa-oil-can"></i>
+                        </div>
+                        <h3 class="servico-card__title">Troca de Óleo</h3>
+                        <p class="servico-card__desc">Utilizamos óleos e filtros das melhores marcas do mercado. Troca rápida com garantia e descarte ecologicamente correto.</p>
+                        <a href="#contato" class="servico-card__link">Solicitar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="servico-card" style="background-image: url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=400&fit=crop');">
+                    <div class="servico-card__banner"></div>
+                    <div class="servico-card__body">
+                        <div class="servico-card__icon">
+                            <i class="fas fa-compact-disc"></i>
+                        </div>
+                        <h3 class="servico-card__title">Freios</h3>
+                        <p class="servico-card__desc">Pastilhas, discos, tambores e fluido de freio. Serviço completo com peças originais para sua segurança e de sua família.</p>
+                        <a href="#contato" class="servico-card__link">Solicitar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="servico-card" style="background-image: url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=400&fit=crop');">
+                    <div class="servico-card__banner"></div>
+                    <div class="servico-card__body">
+                        <div class="servico-card__icon">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <h3 class="servico-card__title">Suspensão</h3>
+                        <p class="servico-card__desc">Amortecedores, molas, bandejas e terminais. Recupere o conforto e a estabilidade do seu veículo com nosso serviço especializado.</p>
+                        <a href="#contato" class="servico-card__link">Solicitar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="servico-card" style="background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&h=400&fit=crop');">
+                    <div class="servico-card__banner"></div>
+                    <div class="servico-card__body">
+                        <div class="servico-card__icon">
+                            <i class="fas fa-gears"></i>
+                        </div>
+                        <h3 class="servico-card__title">Motor</h3>
+                        <p class="servico-card__desc">Diagnóstico eletrônico, reparos e retífica. Equipe treinada para resolver desde falhas simples até reconstruções completas.</p>
+                        <a href="#contato" class="servico-card__link">Solicitar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="servico-card" style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&h=400&fit=crop');">
+                    <div class="servico-card__banner"></div>
+                    <div class="servico-card__body">
+                        <div class="servico-card__icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3 class="servico-card__title">Alinhamento</h3>
+                        <p class="servico-card__desc">Alinhamento e balanceamento de precisão com equipamentos 3D. Aumente a vida útil dos pneus e tenha mais segurança nas curvas.</p>
+                        <a href="#contato" class="servico-card__link">Solicitar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content">
+                <span class="cta__tag">Orçamento Gratuito</span>
+                <h2 class="cta__title">Solicite seu orçamento agora</h2>
+                <p class="cta__desc">Respondemos em até 30 minutos durante o horário comercial.</p>
+                <div class="cta__actions">
+                    <a href="https://wa.me/5511999999999" target="_blank" class="btn btn--primary btn--large">
+                        <i class="fab fa-whatsapp"></i> Fale pelo WhatsApp
+                    </a>
+                    <a href="tel:5511999999999" class="btn btn--outline btn--large">
+                        <i class="fas fa-phone-alt"></i> (11) 99999-9999
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARCAS ATENDIDAS -->
+    <section class="section marcas" id="marcas">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Marcas Atendidas</span>
+                <h2 class="section__title">Trabalhamos com as principais montadoras</h2>
+                <p class="section__desc">
+                    Nossa equipe possui treinamento e ferramentas específicas para atender desde veículos populares até importados de luxo.
+                </p>
+            </div>
+            <div class="marcas__grid">
+                <div class="marca-item"><div class="marca-badge" style="background:#1d3557;">VW</div><span>Volkswagen</span></div>
+                <div class="marca-item"><div class="marca-badge" style="background:#c8102e;">CH</div><span>Chevrolet</span></div>
+                <div class="marca-item"><div class="marca-badge" style="background:#003d79;">FD</div><span>Ford</span></div>
+                <div class="marca-item"><div class="marca-badge" style="background:#a5161e;">FT</div><span>Fiat</span></div>
+                <div class="marca-item"><div class="marca-badge" style="background:#e60012;">TO</div><span>Toyota</span></div>
+                <div class="marca-item"><div class="marca-badge" style="background:#005bac;">HD</div><span>Honda</span></div>
+                <div class="marca-item"><div class="marca-badge" style="background:#00a2d0;">HY</div><span>Hyundai</span></div>
+                <div class="marca-item"><div class="marca-badge" style="background:#c3002f;">NI</div><span>Nissan</span></div>
+                <div class="marca-item"><div class="marca-badge" style="background:#0f2e52; color:#ffcc00;">RN</div><span>Renault</span></div>
+                <div class="marca-item"><div class="marca-badge" style="background:#00573f;">JP</div><span>Jeep</span></div>
+                <div class="marca-item"><div class="marca-badge" style="background:#0066b1;">BM</div><span>BMW</span></div>
+                <div class="marca-item"><div class="marca-badge" style="background:#00adef;">MB</div><span>Mercedes-Benz</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section galeria" id="galeria">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Galeria</span>
+                <h2 class="section__title">Conheça nossa estrutura</h2>
+                <p class="section__desc">
+                    Instalações modernas e equipadas para oferecer o melhor serviço para seu veículo.
+                </p>
+            </div>
+        </div>
+        <div class="galeria__grid">
+            <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1625047509248-ec889cbff17f?w=600&h=400&fit=crop');">
+                <i class="fas fa-wrench"></i>
+                <span>Oficina equipada</span>
+            </div>
+            <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=400&fit=crop');">
+                <i class="fas fa-car"></i>
+                <span>Área de atendimento</span>
+            </div>
+            <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&h=400&fit=crop');">
+                <i class="fas fa-laptop"></i>
+                <span>Diagnóstico digital</span>
+            </div>
+            <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1597074866923-dc0589150a32?w=600&h=400&fit=crop');">
+                <i class="fas fa-tools"></i>
+                <span>Ferramentas especiais</span>
+            </div>
+            <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop');">
+                <i class="fas fa-oil-can"></i>
+                <span>Troca de óleo</span>
+            </div>
+            <div class="galeria-item" style="background-image: url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&h=400&fit=crop');">
+                <i class="fas fa-user-friends"></i>
+                <span>Sala de espera</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="section diferenciais" id="diferenciais">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Diferenciais</span>
+                <h2 class="section__title">Por que escolher a Auto Prime?</h2>
+                <p class="section__desc">
+                    Não somos apenas mais uma oficina. Entregamos excelência em cada serviço realizado.
+                </p>
+            </div>
+            <div class="diferenciais__grid">
+                <div class="diferencial-card">
+                    <div class="diferencial-card__icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Profissionais Certificados</h3>
+                    <p>Equipe técnica com treinamento contínuo e certificações das principais montadoras.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-card__icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Peças Originais</h3>
+                    <p>Trabalhamos exclusivamente com peças originais e de fabricantes reconhecidos no mercado.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-card__icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Garantia Estendida</h3>
+                    <p>Todo serviço realizado possui garantia de até 12 meses, conforme o tipo de reparo.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-card__icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Orçamento detalhado e explicação clara de cada serviço necessário sem letras miúdas.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-card__icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3>Orçamento Gratuito</h3>
+                    <p>Diagnóstico e orçamento sem compromisso. Você autoriza apenas o que for necessário.</p>
+                </div>
+                <div class="diferencial-card">
+                    <div class="diferencial-card__icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Diagnóstico Digital</h3>
+                    <p>Equipamentos de scanner e análise computadorizada para diagnóstico preciso e rápido.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGAMENTO -->
+    <section class="section pagamento" id="pagamento">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Pagamento</span>
+                <h2 class="section__title">Facilitamos seu pagamento</h2>
+                <p class="section__desc">
+                    Aceitamos diversas formas de pagamento para sua comodidade.
+                </p>
+            </div>
+            <div class="pagamento__grid">
+                <div class="pagamento-item">
+                    <i class="fas fa-credit-card"></i>
+                    <strong>Cartão de Crédito</strong>
+                    <span>Até 12x sem juros</span>
+                </div>
+                <div class="pagamento-item">
+                    <i class="fas fa-credit-card"></i>
+                    <strong>Cartão de Débito</strong>
+                    <span>Todas as bandeiras</span>
+                </div>
+                <div class="pagamento-item">
+                    <i class="fab fa-pix"></i>
+                    <strong>PIX</strong>
+                    <span>Aprovação instantânea</span>
+                </div>
+                <div class="pagamento-item">
+                    <i class="fas fa-barcode"></i>
+                    <strong>Boleto Bancário</strong>
+                    <span>Pagamento em até 3 dias úteis</span>
+                </div>
+                <div class="pagamento-item">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <strong>Dinheiro</strong>
+                    <span>Desconto especial</span>
+                </div>
+                <div class="pagamento-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <strong>Transferência</strong>
+                    <span>Depósito bancário</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVALIAÇÕES -->
+    <section class="section avaliacoes" id="avaliacoes">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">Avaliações</span>
+                <h2 class="section__title">O que nossos clientes dizem</h2>
+                <p class="section__desc">
+                    A satisfação dos nossos clientes é o nosso maior prêmio. Confira alguns depoimentos.
+                </p>
+            </div>
+            <div class="avaliacoes__grid">
+                <div class="avaliacao-card">
+                    <div class="avaliacao-card__stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="avaliacao-card__text">
+                        "Serviço impecável! Levei meu carro para revisão e saí de lá impressionado com o cuidado e atenção aos detalhes. Preço justo e entrega no prazo."
+                    </p>
+                    <div class="avaliacao-card__author">
+                        <div class="avaliacao-card__avatar" style="background: #1a3a5c;">R</div>
+                        <div>
+                            <strong>Ricardo Oliveira</strong>
+                            <span>Honda Civic 2020</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="avaliacao-card">
+                    <div class="avaliacao-card__stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="avaliacao-card__text">
+                        "A Auto Prime salvou minha viagem! Problema no motor que outras oficinas não conseguiram diagnosticar. Resolveram em 2 dias. Recomendo de olhos fechados."
+                    </p>
+                    <div class="avaliacao-card__author">
+                        <div class="avaliacao-card__avatar" style="background: #f1c40f; color: #0c2340;">M</div>
+                        <div>
+                            <strong>Marcos Santos</strong>
+                            <span>Toyota Corolla 2019</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="avaliacao-card">
+                    <div class="avaliacao-card__stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="avaliacao-card__text">
+                        "Finalmente uma oficina de confiança! Explicaram tudo antes de fazer, mandaram fotos do serviço e ainda entregaram antes do prazo. Virei cliente fiel."
+                    </p>
+                    <div class="avaliacao-card__author">
+                        <div class="avaliacao-card__avatar" style="background: #1a5276;">A</div>
+                        <div>
+                            <strong>Ana Carolina</strong>
+                            <span>Jeep Renegade 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="section__header">
+                <span class="section__tag">FAQ</span>
+                <h2 class="section__title">Perguntas frequentes</h2>
+                <p class="section__desc">
+                    Tire suas principais dúvidas sobre nossos serviços e formas de atendimento.
+                </p>
+            </div>
+            <div class="faq__list">
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Quanto tempo leva uma revisão completa?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>O prazo médio para uma revisão completa é de 4 a 6 horas, dependendo do modelo e da quantidade de itens a serem verificados. Revisões mais simples podem ser concluídas no mesmo dia. Agende seu horário e evite imprevistos.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Vocês trabalham com seguros?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Sim! Trabalhamos com as principais seguradoras do mercado. Consulte-nos sobre a sua apólice e verifique se a Auto Prime é credenciada. Também aceitamos ordens de serviço via franquia.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Qual a frequência recomendada para troca de óleo?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>A recomendação geral é a cada 5.000 km ou 6 meses para óleo mineral, e até 10.000 km para óleo sintético. Consulte o manual do seu veículo. Na Auto Prime, usamos o óleo especificado pelo fabricante para garantir o melhor desempenho.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Vocês emitem nota fiscal?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Sim, todos os nossos serviços têm nota fiscal eletrônica (NF-e) com garantia e procedência. Trabalhamos dentro das normas legais e você pode confiar na documentação.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-item__question">
+                        <span>Aceitam cartão de crédito e parcelamento?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-item__answer">
+                        <p>Aceitamos todas as bandeiras de cartão de crédito e débito, parcelamento em até 12x no cartão, além de PIX, boleto bancário e transferência. Facilitamos o pagamento para você cuidar do seu carro sem pesar no bolso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HORÁRIOS / CONTATO -->
+    <section class="section contato" id="contato">
+        <div class="container">
+            <div class="contato__wrapper">
+                <div class="contato__info">
+                    <div class="section__header section__header--left">
+                        <span class="section__tag">Contato</span>
+                        <h2 class="section__title">Vamos cuidar do seu carro</h2>
+                        <p class="section__desc">
+                            Solicite seu orçamento gratuito ou agende um horário. Retornamos em até 30 minutos.
+                        </p>
+                    </div>
+                    <div class="contato__details">
+                        <div class="contato__item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Endereço</strong>
+                                <span>Rua das Oficinas, 123 - Centro, São Paulo - SP</span>
+                            </div>
+                        </div>
+                        <div class="contato__item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Telefone</strong>
+                                <span>(11) 99999-9999</span>
+                            </div>
+                        </div>
+                        <div class="contato__item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>E-mail</strong>
+                                <span>contato@autoprimeoficina.com.br</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contato__hours">
+                        <h4><i class="far fa-clock"></i> Horários de Atendimento</h4>
+                        <div class="contato__hours-grid">
+                            <div><span>Segunda a Sexta</span><strong>08:00 - 18:00</strong></div>
+                            <div><span>Sábado</span><strong>08:00 - 13:00</strong></div>
+                            <div><span>Domingo e Feriados</span><strong>Fechado</strong></div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contato__form" id="contactForm">
+                    <div class="form__group">
+                        <input type="text" id="nome" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="tel" id="telefone" placeholder="Seu telefone" required>
+                    </div>
+                    <div class="form__group">
+                        <input type="email" id="email" placeholder="Seu e-mail">
+                    </div>
+                    <div class="form__group">
+                        <select id="servico" required>
+                            <option value="" disabled selected>Selecione o serviço</option>
+                            <option value="revisao">Revisão</option>
+                            <option value="oleo">Troca de Óleo</option>
+                            <option value="freios">Freios</option>
+                            <option value="suspensao">Suspensão</option>
+                            <option value="motor">Motor</option>
+                            <option value="alinhamento">Alinhamento e Balanceamento</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <textarea id="mensagem" rows="4" placeholder="Descreva o problema ou serviço desejado"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">
+                        Solicitar Orçamento <i class="fab fa-whatsapp"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAPA -->
+    <section class="mapa">
+        <div class="mapa__container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.197491177467!2d-46.653!3d-23.561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sS%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <i class="fas fa-car"></i>
+                        <span>Auto <strong>Prime</strong></span>
+                    </div>
+                    <p>Excelência em serviços automotivos há mais de 15 anos. Cuidamos do seu carro com a dedicação que ele merece.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/5511999999999" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#servicos">Revisão</a></li>
+                        <li><a href="#servicos">Troca de Óleo</a></li>
+                        <li><a href="#servicos">Freios</a></li>
+                        <li><a href="#servicos">Suspensão</a></li>
+                        <li><a href="#servicos">Motor</a></li>
+                        <li><a href="#servicos">Alinhamento</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Atendimento</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#avaliacoes">Avaliações</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Horários</h4>
+                    <ul class="footer__hours">
+                        <li><span>Seg - Sex:</span> 08:00 - 18:00</li>
+                        <li><span>Sábado:</span> 08:00 - 13:00</li>
+                        <li><span>Dom/Fer:</span> Fechado</li>
+                    </ul>
+                    <a href="https://wa.me/5511999999999" target="_blank" class="btn btn--whatsapp" style="margin-top: 1rem;">
+                        <i class="fab fa-whatsapp"></i> (11) 99999-9999
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Auto Prime - Oficina Mecânica. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox__close" id="lightboxClose">&times;</button>
+        <div class="lightbox__content">
+            <img src="" alt="" id="lightboxImg">
+            <p id="lightboxCaption"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
