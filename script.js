@@ -60,26 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', updateActiveNav, { passive: true });
 
-    // === Scroll Animations (Intersection Observer) ===
-    const animatedElements = document.querySelectorAll('.animate-fade-up, .animate-fade-left');
-
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px 0px -60px 0px',
-        threshold: 0.1
-    };
-
-    const scrollObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animated');
-                scrollObserver.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    animatedElements.forEach(el => scrollObserver.observe(el));
-
     // === Counter Animation ===
     const counters = document.querySelectorAll('.stat-number[data-count]');
 
